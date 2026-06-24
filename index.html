@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div id="container">
+        <div id="websiteTitle">
+            <h1>Rock, Paper, Scissors</h1>
+        </div>
+
+        <div>
+            <label for="">Pick your throw: </label>
+            <button id="rock" class="throws" onclick="appendToDisplay(1)">Rock</button>
+            <button id="paper" class="throws" onclick="appendToDisplay(2)">Paper</button>
+            <button id="scissors" class="throws" onclick="appendToDisplay(3)">Scissors</button>
+        </div>
+
+        <div>
+            <h1>Opponent's throw will be revealed after you choose your throw. </h1>
+            <input type="text" disabled id="opponentThrowInput">
+        </div>
+
+        <div id="matchResult">
+            <h1 id="commend">Waiting for your throw...</h1>
+        </div>
+
+        <div id="gameOver">
+            <h1>Game Over!</h1>
+            <button id="tryAgain" onclick="resetGame()">Try again</button>
+        </div>
+
+
+    </div>
+
+    <script src="jvscript.js"></script>
+
+
+</body>
+</html>

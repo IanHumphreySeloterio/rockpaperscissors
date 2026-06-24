@@ -1,0 +1,117 @@
+body{
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #111;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#container{
+    width: 700px;
+    text-align: center;
+
+    background-color: #1b1b1b;
+    border: 6px solid #b22222;
+    border-radius: 15px;
+
+    padding: 30px;
+
+    box-shadow:
+    0 0 20px rgba(178,34,34,0.5),
+    0 0 50px rgba(178,34,34,0.3);
+}
+
+#websiteTitle h1{
+    font-size: 3rem;
+    color: gold;
+}
+
+label{
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.throws{
+    margin: 10px;
+    padding: 15px 25px;
+
+    font-size: 1.2rem;
+    font-weight: bold;
+
+    border: none;
+    border-radius: 10px;
+
+    background-color: #b22222;
+    color: white;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.throws:hover{
+    transform: scale(1.08);
+    background-color: crimson;
+}
+
+.throws:disabled{
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+#opponentThrowInput{
+    width: 80%;
+    padding: 12px;
+
+    font-size: 1rem;
+    text-align: center;
+
+    border: 2px solid gold;
+    border-radius: 8px;
+
+    background-color: #222;
+    color: white;
+}
+
+#matchResult{
+    margin-top: 20px;
+}
+
+#commend{
+    color: gold;
+    font-size: 2rem;
+}
+
+#gameOver{
+    margin-top: 25px;
+}
+
+#gameOver h1{
+    color: crimson;
+    text-transform: uppercase;
+}
+
+#tryAgain{
+    padding: 12px 24px;
+
+    font-size: 1.1rem;
+    font-weight: bold;
+
+    border: none;
+    border-radius: 10px;
+
+    background-color: gold;
+    color: black;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+#tryAgain:hover{
+    transform: scale(1.08);
+}
