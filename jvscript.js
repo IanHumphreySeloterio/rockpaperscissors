@@ -6,6 +6,8 @@ const paper = document.getElementById("paper");
 const scissors = document.getElementById("scissors");
 const gameOver = document.getElementById("gameOver");
 const streakDisplay = document.getElementById("streakNumber");
+const playerThrow = document.getElementById("playerThrow");
+const cpuThrow = document.getElementById("cpuThrow");
 
 function getRandomInt(min, max) {
   return Math.floor(Math.random() * (max - min + 1)) + min;
@@ -23,6 +25,17 @@ gameOver.style.display = "none";
 function appendToDisplay(playerChoice){
 
     let computerChoice = getRandomInt(1, 3);
+
+    const emojis = {
+        1: "✊",
+        2: "✋",
+        3: "✌️"
+    };
+
+playerThrow.textContent = emojis[playerChoice];
+cpuThrow.textContent = emojis[computerChoice];
+
+
 
     if(computerChoice === playerChoice){  
 
@@ -104,6 +117,9 @@ function resetGame(){
     scissors.disabled = false;
 
     gameOver.style.display = "none";
+
+    playerThrow.textContent = "❔";
+    cpuThrow.textContent = "❔";
 }
 
 

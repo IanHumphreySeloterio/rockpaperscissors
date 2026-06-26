@@ -25,6 +25,16 @@ body{
     0 0 50px rgba(178,34,34,0.3);
 }
 
+#websiteTitle{
+    margin-bottom: 25px;
+}
+
+#streakBox{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
 #websiteTitle h1{
     font-size: 3rem;
     color: gold;
