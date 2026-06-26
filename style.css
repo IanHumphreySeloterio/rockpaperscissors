@@ -82,8 +82,9 @@ label{
 }
 
 #commend{
-    color: gold;
-    font-size: 2rem;
+    font-size: 3rem;
+    font-weight: bold;
+    text-shadow: 0 0 15px currentColor;
 }
 
 #gameOver{
@@ -93,6 +94,23 @@ label{
 #gameOver h1{
     color: crimson;
     text-transform: uppercase;
+}
+
+#battleArea{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin: 30px 0;
+}
+
+.fighter div{
+    font-size: 5rem;
+}
+
+#vs{
+    font-size: 2rem;
+    color: gold;
 }
 
 #tryAgain{
@@ -114,4 +132,11 @@ label{
 
 #tryAgain:hover{
     transform: scale(1.08);
+}
+
+#streakBox{
+    margin-top: 10px;
+    font-size: 1.5rem;
+    color: orange;
+    font-weight: bold;
 }
