@@ -10,7 +10,12 @@
     
     <div id="container">
         <div id="websiteTitle">
-            <h1>Rock, Paper, Scissors</h1>
+            <h1>Rock, Paper, Scissors
+                <div id="streakBox">
+                    🔥 Win Streak:
+                    <span id="streakNumber">0</span>
+                </div>
+            </h1>
         </div>
 
         <div>
@@ -27,6 +32,20 @@
 
         <div id="matchResult">
             <h1 id="commend">Waiting for your throw...</h1>
+        </div>
+
+        <div id="battleArea">
+            <div class="fighter">
+                <h2>You</h2>
+                <div id="playerThrow">❔</div>
+            </div>
+
+            <div id="vs">VS</div>
+
+            <div class="fighter">
+                <h2>CPU</h2>
+                <div id="cpuThrow">❔</div>
+            </div>
         </div>
 
         <div id="gameOver">
